@@ -1,0 +1,10 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": "5433",
+  "username": "postgres",
+  "password": "postgres",
+  "database": "schedule",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "migrations": ["src/migration/*.ts"]
+}
