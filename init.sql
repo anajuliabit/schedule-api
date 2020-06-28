@@ -1,0 +1,3 @@
+CREATE USER postgres;
+CREATE DATABASE schedule;
+GRANT ALL PRIVILEGES ON DATABASE schedule TO postgres;
