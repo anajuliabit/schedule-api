@@ -5,5 +5,7 @@
   "username": "postgres",
   "password": "postgres",
   "database": "schedule",
-  "entities": ["dist/**/*.entity.js"]
+  "entities": ["dist/**/*.entity.js"],
+  "autoLoadEntities": true,
+  "synchronize": true
 }

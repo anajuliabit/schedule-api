@@ -4,6 +4,11 @@
 
   <p align="center">Desafio de desenvolvimento cujo objetivo era criar uma API com Node para agendar eventos</p>
 
+## Features
+
+1. Autenticação com JWT
+2. CRUD de eventos
+
 ## Instalação
 
 ```bash
