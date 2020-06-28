@@ -28,4 +28,5 @@ A aplicação ficará disponível em: [http://localhost:3000](http://localhost:3
 
 ## :pushpin: Todo
 
-[ ] - Implementar testes com Jest
+- [ ] Implementar testes com Jest.
+- [ ] Implementar serviço para enviar emails a cada evento agendado/alterado.
