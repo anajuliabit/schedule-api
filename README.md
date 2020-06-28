@@ -1,10 +1,16 @@
-<p align="center">
-<img src="https://www.vippng.com/png/detail/211-2117863_1-6-meet-schedule-mark-your-calendar-icon.png" width="320" alt="Icon" /></a>
-</p>
+# :calendar: schedule-api
 
-  <p align="center">Desafio de desenvolvimento cujo objetivo era criar uma API com Node para agendar eventos</p>
+Desafio de desenvolvimento cujo objetivo era implementar uma API para marcar eventos
 
-## Features
+## :computer: Tecnologias
+
+- [Node](https://nodejs.org/en/)
+- [Docker](https://www.docker.com/)
+- [Nest.js](https://nestjs.com/)
+- [TypeORM](https://typeorm.io/#/)
+- [Fastify](https://www.fastify.io/)
+
+## :sparkles: Features
 
 1. Autenticação com JWT
 2. CRUD de eventos
@@ -15,28 +21,8 @@
 $ npm install
 ```
 
-## Rodando o app
+## :wrench: Executando o projeto
 
-```bash
-# development
-$ npm run start
+## :pushpin: Todo
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
+[ ] - Implementar testes com Jest
