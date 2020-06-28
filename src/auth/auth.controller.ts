@@ -9,7 +9,6 @@ import {
 import { AuthService } from './auth.service';
 import { UsersService } from 'src/users/users.service';
 import { UserModel } from 'src/users/user.model';
-import { AuthGuard } from '@nestjs/passport';
 import Login from './interface/login.interface';
 import { LocalAuthGuard } from './guards/local-auth.guard';
 

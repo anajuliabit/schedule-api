@@ -1,4 +1,4 @@
-import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Event } from './event.entity';
 import { Repository, DeleteResult } from 'typeorm';
@@ -11,6 +11,8 @@ export class EventsService {
     private readonly repository: Repository<Event>,
   ) {}
 
+  private readonly logger = new Logger(EventsService.name);
+
   findAll(): Promise<Event[]> {
     return this.repository.find();
   }
@@ -20,10 +22,12 @@ export class EventsService {
   }
 
   async create(event: EventModel): Promise<Event> {
+    this.logger.log('saving event');
     return await this.repository.save(event);
   }
 
   async delete(id: number): Promise<DeleteResult> {
+    this.logger.log('deleting event');
     return await this.repository.delete(id);
   }
 
@@ -35,6 +39,7 @@ export class EventsService {
         HttpStatus.NOT_FOUND,
       );
     }
+    this.logger.log('updating event');
     await this.repository.update(id, newValue);
     return await this.repository.findOne(id);
   }

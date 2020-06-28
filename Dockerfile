@@ -1,5 +1,5 @@
-FROM node:latest
-WORKDIR /usr/src
+FROM node:12.13.0
+WORKDIR /usr/src/app
 
 COPY package*.json ./
 
