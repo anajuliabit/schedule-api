@@ -15,13 +15,16 @@ Desafio de desenvolvimento cujo objetivo era implementar uma API para marcar eve
 1. Autenticação com JWT
 2. CRUD de eventos
 
-## Instalação
+## :wrench: Executando o projeto
+
+Certifique-se de ter o [Docker](https://www.docker.com/) e [Docker Compose](https://docs.docker.com/compose/env-file/) instalados na sua máquina.
+Na raíz do projeto execute:
 
 ```bash
-$ npm install
+$ docker-compose up
 ```
 
-## :wrench: Executando o projeto
+A aplicação ficará disponível em: [http://localhost:3000](http://localhost:3000)
 
 ## :pushpin: Todo
 
