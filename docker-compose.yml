@@ -1,6 +1,17 @@
 version: '3.1'
 
 services:
+  db:
+    image: postgres:9.5-alpine
+    restart: always
+    container_name: schedule-db
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    volumes:
+      - ./resources/init.sh:/docker-entrypoint-initdb.d/init.sh
   app:
     container_name: schedule-api
     restart: always
@@ -14,14 +25,3 @@ services:
     volumes:
       - ./:/usr/src/app
       - /usr/src/app/node_modules
-  db:
-    image: postgres:9.5-alpine
-    restart: always
-    container_name: schedule-db
-    ports:
-      - 5432:5432
-    environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
-    volumes:
-      - ./resources/init.sql:/docker-entrypoint-initd/init.sql
