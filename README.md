@@ -26,7 +26,7 @@ $ docker-compose up
 
 A aplicação ficará disponível em: [http://localhost:3000](http://localhost:3000)
 
-## :pushpin: Todo
+## :pushpin: Melhorias
 
 - [ ] Implementar testes com Jest.
 - [ ] Implementar serviço para enviar emails a cada evento agendado/alterado.
